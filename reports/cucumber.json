@@ -1,0 +1,71 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 3,
+            "value": "#this is to navigate to the blue sku Citadel homepage"
+          }
+        ],
+        "line": 5,
+        "name": "Home Page Navigation",
+        "description": "",
+        "id": "homepage;home-page-navigation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14113489799,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "that I naviagate to www.blueskycitadel.com",
+            "match": {
+              "location": "HomePage.that_I_naviagate_to_www_blueskycitadel_com()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 679070107,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click the homepage menu",
+            "match": {
+              "location": "HomePage.i_click_the_homepage_menu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13574653,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cBlueSkyC[mmmmm]itadel\u003e but was:\u003cBlueSkyC[]itadel\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat bindings.HomePage.i_can_view_the_home_page(HomePage.java:45)\r\n\tat ✽.Then I can view the home page(homepage.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "I can view the home page",
+            "match": {
+              "location": "HomePage.i_can_view_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "HomePage",
+    "description": "",
+    "id": "homepage",
+    "keyword": "Feature",
+    "uri": "homepage.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@run"
+      }
+    ]
+  }
+]
